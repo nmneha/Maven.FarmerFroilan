@@ -1,7 +1,10 @@
 package com.zipcodewilmington.froilansfarm.Interfaces;
 
-public interface Botanist {
-    default void plant(){
+import com.zipcodewilmington.froilansfarm.Crops.Crop;
+import com.zipcodewilmington.froilansfarm.Crops.CropRow;
+
+public interface Botanist <CropType extends Crop>{
+    default void plant(CropRow row,CropType crop){
 
     }
 }

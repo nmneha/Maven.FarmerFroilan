@@ -1,5 +1,9 @@
 package com.zipcodewilmington.froilansfarm.Interfaces;
 
-public interface Eater<edible> {
-    default void eat(){}
+import com.zipcodewilmington.froilansfarm.Crops.Crop;
+
+public interface Eater <EdibleType extends Edible >{
+    default void eat(EdibleType food){
+          //food.consume();
+    }
 }
