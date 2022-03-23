@@ -1,4 +1,6 @@
 package com.zipcodewilmington.froilansfarm;
 
-public class Person extends Animal{
+import com.zipcodewilmington.froilansfarm.Animals.Animal;
+
+public class Person extends Animal {
 }
