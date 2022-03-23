@@ -1,5 +1,5 @@
 package com.zipcodewilmington.froilansfarm.Crops;
 
-public class CropRow {
-    Crop crop = new Crop();
+public class CropRow <CropType extends Crop> {
+
 }
