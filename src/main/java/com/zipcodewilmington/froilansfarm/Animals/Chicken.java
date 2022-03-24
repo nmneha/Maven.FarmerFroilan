@@ -13,6 +13,7 @@ public class Chicken extends Animal<EarCorn> implements Produce {
 
         @Override
         public String eat(EarCorn food) {
+                food.consumed();
                 return "Yummy";
         }
         //yeild eggs
