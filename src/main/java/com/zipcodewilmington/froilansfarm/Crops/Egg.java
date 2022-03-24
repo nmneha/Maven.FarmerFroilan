@@ -6,13 +6,14 @@ import com.zipcodewilmington.froilansfarm.Interfaces.Produce;
 public class Egg implements Produce, Edible {
     int eggCount;
 
+    @Override
     public boolean hasBeenFertilized() {
-        return false;
+        return Produce.super.hasBeenFertilized();
     }
 
-
+    @Override
     public boolean hasBeenHarvested() {
-        return true;
+        return Produce.super.hasBeenHarvested();
     }
 
     @Override
