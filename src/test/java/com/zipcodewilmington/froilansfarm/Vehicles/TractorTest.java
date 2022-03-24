@@ -21,13 +21,5 @@ public class TractorTest {
         Assert.assertEquals(actual, expected);
 
     }
-    @Test
-    public void makeNoiseFalseTest() {
-        Tractor johnDeere = new Tractor();
-        String expected = "CHUG CHUG";
-        String actual = johnDeere.makeNoise();
-        Assert.assertNotEquals(actual, expected);
-
-    }
 
 }

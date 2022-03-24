@@ -22,12 +22,4 @@ public class AircraftTest {
         Assert.assertEquals(expected, actual);
     }
 
-    @Test
-    public void makeNoiseFalseTest() {
-        Aircraft cropper = new Aircraft();
-        String expected = "BRAAAAP";
-        String actual = cropper.makeNoise();
-        Assert.assertNotEquals(expected, actual);
-    }
-
 }
