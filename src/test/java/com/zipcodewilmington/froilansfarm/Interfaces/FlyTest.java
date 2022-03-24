@@ -12,7 +12,6 @@ class FlyTest {
 
 public void flyTest(){
     CropDuster cropduster = new CropDuster();
-    boolean expected = true;
     boolean actual = cropduster.fly();
     assertTrue(actual);
 }
