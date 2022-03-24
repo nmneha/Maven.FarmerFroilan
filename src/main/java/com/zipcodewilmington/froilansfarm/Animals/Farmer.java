@@ -1,7 +1,8 @@
 package com.zipcodewilmington.froilansfarm.Animals;
 
-import com.zipcodewilmington.froilansfarm.Interfaces.Botanist;
-import com.zipcodewilmington.froilansfarm.Interfaces.Rider;
+import com.zipcodewilmington.froilansfarm.Animals.Person;
 
-public class Farmer extends Person implements Rider, Botanist {
+
+public class Farmer extends Person implements Botanist {
+
 }
