@@ -7,7 +7,7 @@ import com.zipcodewilmington.froilansfarm.Vehicles.Tractor;
 
 import org.junit.Test;
 
-class FarmVehicleTest {
+public class FarmVehicleTest {
 
     @Test
     public void operateTest() {

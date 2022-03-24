@@ -3,7 +3,7 @@ package com.zipcodewilmington.froilansfarm.Vehicles;
 import org.junit.Test;
 import org.testng.Assert;
 
-class TractorTest {
+public class TractorTest {
 
     @Test
     public void operateTest() {

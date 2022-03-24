@@ -3,7 +3,7 @@ package com.zipcodewilmington.froilansfarm.Vehicles;
 import org.junit.Test;
 import org.testng.Assert;
 
-class VehicleTest {
+public class VehicleTest {
 
     @Test
     public void makeNoiseTest() {

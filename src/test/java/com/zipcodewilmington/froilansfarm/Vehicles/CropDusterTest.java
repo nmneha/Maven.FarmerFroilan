@@ -2,6 +2,6 @@ package com.zipcodewilmington.froilansfarm.Vehicles;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CropDusterTest {
+public class CropDusterTest {
 
 }

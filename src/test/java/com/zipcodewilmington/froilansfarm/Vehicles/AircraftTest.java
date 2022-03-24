@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.Assert;
 import org.junit.Test;
 
-class AircraftTest {
+public class AircraftTest {
 
     @Test
     public void AircraftFlyTest() {
