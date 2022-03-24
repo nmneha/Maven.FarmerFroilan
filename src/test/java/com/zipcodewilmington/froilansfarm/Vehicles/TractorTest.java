@@ -1,9 +1,5 @@
 package com.zipcodewilmington.froilansfarm.Vehicles;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-import javax.print.DocFlavor.STRING;
-
 import org.junit.Test;
 import org.testng.Assert;
 

@@ -1,7 +1,5 @@
 package com.zipcodewilmington.froilansfarm.Vehicles;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.Test;
 import org.testng.Assert;
 
