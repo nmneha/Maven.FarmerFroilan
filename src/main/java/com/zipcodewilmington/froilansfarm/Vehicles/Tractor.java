@@ -14,4 +14,10 @@ public class Tractor extends Vehicle<Farmer> implements FarmVehicle {
         return FarmVehicle.super.operate();
     }
 
+    @Override
+    public String makeNoise() {
+        // TODO Auto-generated method stub
+        return super.makeNoise("GLUG, GLUG");
+    }
+
 }
