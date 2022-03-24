@@ -1,11 +1,9 @@
 package com.zipcodewilmington.froilansfarm.Vehicles;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.Test;
 import org.testng.Assert;
 
-class VehicleTest {
+public class VehicleTest {
 
     @Test
     public void makeNoiseTest() {

@@ -2,6 +2,6 @@ package com.zipcodewilmington.froilansfarm.Housing;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class StableTest {
+public class StableTest {
 
 }

@@ -6,7 +6,7 @@ import com.zipcodewilmington.froilansfarm.Vehicles.CropDuster;
 
 import org.junit.Test;
 
-class FlyTest {
+public class FlyTest {
 
 @Test
 
