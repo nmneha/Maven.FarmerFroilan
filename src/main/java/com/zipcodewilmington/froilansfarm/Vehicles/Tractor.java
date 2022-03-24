@@ -20,4 +20,6 @@ public class Tractor extends Vehicle<Farmer> implements FarmVehicle {
         return "GLUG GLUG";
     }
 
+    // Tractor needs to "harvest" a "crop"
+
 }
