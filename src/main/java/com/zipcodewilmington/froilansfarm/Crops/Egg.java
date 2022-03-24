@@ -7,13 +7,12 @@ public class Egg implements Produce, Edible {
     int eggCount;
 
     @Override
-    public boolean hasBeenFertilized() {
-        return Produce.super.hasBeenFertilized();
+    public boolean hasBeenFertilized(boolean isFertilized) {
+        return isFertilized;
     }
-
     @Override
-    public boolean hasBeenHarvested() {
-        return Produce.super.hasBeenHarvested();
+    public boolean hasBeenHarvested(boolean isHarvested) {
+        return isHarvested;
     }
 
     @Override
