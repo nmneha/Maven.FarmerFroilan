@@ -4,21 +4,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class HorseTest {
+class PilotTest {
 
     @Test
     void makeNoise() {
-    }
-
-    @Test
-    void eat() {
-    }
-
-    @Test
-    void testMakeNoise() {
-    }
-
-    @Test
-    void testEat() {
     }
 }
