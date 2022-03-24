@@ -8,14 +8,4 @@ public class CornStalk extends Crop{
         return null;
     }
 
-    @Override
-    public boolean hasBeenHarvested() {
-        return true;
-    }
-
-    @Override
-    public boolean hasBeenFertilized() {
-        return false;
-    }
-
 }
