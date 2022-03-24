@@ -6,8 +6,10 @@ import java.util.ArrayList;
 
 public class FarmHouse  extends Housing<Person> {
 
-          public FarmHouse() {
-              super.housed = new ArrayList<Person> ();
-          }
+    public FarmHouse() {
+        super.housed = new ArrayList<Person> ();
+    }
+
+
 
 }
