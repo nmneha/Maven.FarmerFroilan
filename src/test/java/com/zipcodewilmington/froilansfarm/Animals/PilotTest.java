@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class PilotTest {
 
     @Test
-    void makeNoise() {
+    void makeNoiseTest() {
         //given
         Person froilanda = new Pilot();
         String expected = "Hi";
@@ -20,7 +20,7 @@ class PilotTest {
 
 
     @Test
-    void eat() {
+    void eatTest() {
         //given
         Tomato t = new Tomato();
         Person froilanda = new Pilot();
