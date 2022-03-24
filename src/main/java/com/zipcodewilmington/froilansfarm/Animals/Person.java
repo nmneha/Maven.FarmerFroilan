@@ -13,6 +13,7 @@ public class Person extends Animal<Edible> {
 
     @Override
     public String eat(Edible food) {
+        food.consumed();
         return "Yummy";
     }
 }

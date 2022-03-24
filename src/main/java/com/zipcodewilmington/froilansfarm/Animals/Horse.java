@@ -13,6 +13,7 @@ public class Horse extends Animal<EarCorn> implements Rideable {
 
     @Override
     public String eat(EarCorn food) {
+        food.consumed();
         return "Yumm";
     }
 }
