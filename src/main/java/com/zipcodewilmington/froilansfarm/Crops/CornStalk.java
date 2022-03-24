@@ -9,12 +9,12 @@ public class CornStalk extends Crop{
     }
 
     @Override
-    public boolean hasBeenFertilized() {
-        return super.hasBeenFertilized();
+    public boolean hasBeenFertilized(boolean isFertilized) {
+        return isFertilized;
     }
 
     @Override
-    public boolean hasBeenHarvested() {
-        return super.hasBeenHarvested();
+    public boolean hasBeenHarvested(boolean isHarvested) {
+        return isHarvested;
     }
 }
