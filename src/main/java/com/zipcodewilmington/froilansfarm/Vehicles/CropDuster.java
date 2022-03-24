@@ -15,7 +15,8 @@ public class CropDuster extends Aircraft implements FarmVehicle {
 
     @Override
     public boolean fly() {
-
+        // TODO Auto-generated method stub
+        return super.fly();
     }
 
     @Override
