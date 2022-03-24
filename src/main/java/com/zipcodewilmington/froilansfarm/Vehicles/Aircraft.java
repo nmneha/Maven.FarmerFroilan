@@ -13,6 +13,6 @@ public class Aircraft extends Vehicle<Pilot> implements Fly {
     @Override
     public String makeNoise() {
         // TODO Auto-generated method stub
-        return super.makeNoise("VROOM");
+        return "VROOM";
     }
 }
