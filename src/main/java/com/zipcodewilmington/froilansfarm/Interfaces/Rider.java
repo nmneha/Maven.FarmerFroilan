@@ -7,4 +7,8 @@ public interface Rider {
     default void dismount(){
 
     }
+
+    default void ride() {
+
+    }
 }
