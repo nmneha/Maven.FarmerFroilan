@@ -13,4 +13,5 @@ public class Tractor extends Vehicle<Farmer> implements FarmVehicle {
         // TODO Auto-generated method stub
         return FarmVehicle.super.operate();
     }
+
 }
