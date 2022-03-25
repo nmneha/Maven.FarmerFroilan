@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class CropRow<Crop>{
-    List<Crop> CropRow = new ArrayList<>();
+public class CropRow{
+    public List<Crop> cropRow = new ArrayList<>();
 
 }

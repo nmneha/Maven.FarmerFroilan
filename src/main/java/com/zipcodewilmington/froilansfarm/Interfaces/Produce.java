@@ -5,9 +5,7 @@ public interface Produce {
         return null;
     }
 
-    boolean isFertilzied = false;
 
-    boolean isHarvested = false;
 
     default boolean hasBeenFertilized(boolean isFertilized) {
         return false;

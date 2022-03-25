@@ -1,32 +1,32 @@
 package com.zipcodewilmington.froilansfarm.Animals;
 
-import com.zipcodewilmington.froilansfarm.Crops.EarCorn;
+import com.zipcodewilmington.froilansfarm.Crops.Tomato;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class ChickenTest {
-
+class PilotTest {
 
     @Test
     void makeNoiseTest() {
         //given
-        Chicken chicken = new Chicken();
-        String expected = "cluck cluck";
+        Person froilanda = new Pilot();
+        String expected = "Hi";
         //when
-         String actual = chicken.makeNoise();
+        String actual = froilanda.makeNoise();
         //then
         assertEquals(expected,actual);
     }
 
+
     @Test
     void eatTest() {
         //given
-        EarCorn e = new EarCorn();
-        Chicken chicken = new Chicken();
+        Tomato t = new Tomato();
+        Person froilanda = new Pilot();
         String expected = "Yummy";
         //when
-        String actual = chicken.eat(e);
+        String actual = froilanda.eat(t);
         //then
         assertEquals(expected,actual);
     }
