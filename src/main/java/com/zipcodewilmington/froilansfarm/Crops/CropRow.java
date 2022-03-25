@@ -7,6 +7,6 @@ import java.util.List;
 import java.util.Map;
 
 public class CropRow{
-    public List<Crop> CropRow = new ArrayList<>();
+    public List<Crop> cropRow = new ArrayList<>();
 
 }

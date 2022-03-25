@@ -7,12 +7,12 @@ import com.zipcodewilmington.froilansfarm.Crops.Tomato;
 
 public interface Botanist <CropType extends Crop>{
     default void plantRow(CropRow row,CropType crop){
-        row.CropRow.add(crop);
+        row.cropRow.add(crop);
     }
 
     default void plantFeild(Field field, CropType crop){
-        for(int x =0;x<field.Field.size();x++)
-        plantRow(field.Field.get(x),crop);
+        for(int x =0;x<field.field.size();x++)
+        plantRow(field.field.get(x),crop);
     }
 
 }
