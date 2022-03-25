@@ -7,13 +7,15 @@ import com.zipcodewilmington.froilansfarm.Crops.CropRow;
 import com.zipcodewilmington.froilansfarm.Interfaces.FarmVehicle;
 
 
-import static com.zipcodewilmington.froilansfarm.Interfaces.Produce.isFertilzied;
+
+import static com.zipcodewilmington.froilansfarm.Interfaces.Produce.*;
+
 
 public class CropDuster extends Aircraft implements FarmVehicle {
-    public boolean fertilize(CropRow...cropRows) {
-        for(CropRow s : cropRows){
+    public boolean fertilize(CropRow... cropRows) {
+        for(CropRow s  : cropRows){
             if (inFlight){
-                Crop.isFertilzied = true;
+                return true;
             }
         }
         return false;
