@@ -18,13 +18,11 @@ public interface Botanist <CropType extends Crop>{
     }
 
     default Field plantField(Field field, CropType... crops) {
-        for (int x = 0; x < field.field.size(); x++)
-            for (CropType crop : crops) {
-//                if(field.field == null){
-//                    field.field = new ArrayList<CropRow>();
-//                }
-                field.add(plantRow(field.getCropRow(x), crop));
-            }
+        int x = 0;
+        for (CropType crop : crops) {
+            field.add(plantRow(field.getCropRow(x), crop));
+            x++;
+        }
         return field;
     }
 }
