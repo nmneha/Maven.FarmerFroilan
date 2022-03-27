@@ -1,5 +1,12 @@
 package com.zipcodewilmington.froilansfarm.Vehicles;
 
+import com.zipcodewilmington.froilansfarm.Animals.Farmer;
+import com.zipcodewilmington.froilansfarm.Animals.Person;
+import com.zipcodewilmington.froilansfarm.Animals.Pilot;
+import com.zipcodewilmington.froilansfarm.Crops.CornStalk;
+import com.zipcodewilmington.froilansfarm.Crops.Crop;
+import com.zipcodewilmington.froilansfarm.Crops.CropRow;
+import com.zipcodewilmington.froilansfarm.Crops.Field;
 import org.junit.Test;
 import org.testng.Assert;
 
@@ -7,9 +14,15 @@ public class TractorTest {
 
     @Test
     public void operateTest() {
+        Person person = new Farmer<>();
+        Field field = new Field();
+        CropRow croprow = new CropRow();
+        Crop cornstalk = new CornStalk();
+        croprow.add(cornstalk);
+        field.add(croprow);
         Tractor tractor = new Tractor();
-        boolean actual = tractor.operate();
-        Assert.assertTrue(actual);
+
+        org.junit.Assert.assertTrue(tractor.operate(person, field));
 
     }
 
@@ -22,4 +35,18 @@ public class TractorTest {
 
     }
 
+    @Test
+    public void harvestTest() {
+        Tractor tractor = new Tractor();
+        CropDuster dust = new CropDuster();
+        Field field = new Field();
+        CropRow croprow = new CropRow();
+        Crop cornstalk = new CornStalk();
+        croprow.add(cornstalk);
+        field.add(croprow);
+        dust.fertilize(field);
+        int actual = tractor.harvest(field);
+        int expected = 1;
+        Assert.assertEquals(actual, expected);
+    }
 }

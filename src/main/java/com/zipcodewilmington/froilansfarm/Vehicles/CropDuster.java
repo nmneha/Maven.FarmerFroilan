@@ -30,15 +30,15 @@ public class CropDuster extends Aircraft implements FarmVehicle {
         return false;
     }
 
-    public boolean operate(Person person, CropRow[] cropRows) {
+    public boolean operate(Person person, Field field) {
+        boolean operated = false;
         if (person instanceof Pilot){
-            boolean operated = false;
             fly();
-            //fertilize();
-            operated = true;
-            return operated;
+            fertilize(field);
+            return true;
+        }else {
+            return false;
         }
-        return FarmVehicle.super.operate();
     }
 
     @Override
