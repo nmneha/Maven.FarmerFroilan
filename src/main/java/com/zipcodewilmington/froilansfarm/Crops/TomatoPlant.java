@@ -13,13 +13,13 @@ public class TomatoPlant extends Crop {
         }
     }
 
-    @Override
-    public boolean isFertilized() {
+
+    public boolean hasBeenFertilized() {
         return isFertilized;
     }
 
-    @Override
-    public boolean isHarvested() {
+
+    public boolean hasBeenHarvested() {
         return isHarvested;
     }
 }
