@@ -35,10 +35,10 @@ public class CropDuster extends Aircraft implements FarmVehicle {
         if (person instanceof Pilot){
             fly();
             fertilize(field);
-            operated = true;
-            return operated;
+            return true;
+        }else {
+            return false;
         }
-        return FarmVehicle.super.operate();
     }
 
     @Override
