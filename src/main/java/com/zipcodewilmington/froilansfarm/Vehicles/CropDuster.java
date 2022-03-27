@@ -4,6 +4,7 @@ import com.zipcodewilmington.froilansfarm.Animals.Person;
 import com.zipcodewilmington.froilansfarm.Animals.Pilot;
 import com.zipcodewilmington.froilansfarm.Crops.Crop;
 import com.zipcodewilmington.froilansfarm.Crops.CropRow;
+import com.zipcodewilmington.froilansfarm.Crops.Field;
 import com.zipcodewilmington.froilansfarm.Interfaces.FarmVehicle;
 
 
@@ -14,14 +15,14 @@ import static com.zipcodewilmington.froilansfarm.Interfaces.Produce.*;
 public class CropDuster extends Aircraft implements FarmVehicle {
 
 
-    public boolean fertilize(CropRow... cropRows) {
-        boolean fertilized = true;
-        for(CropRow s  : cropRows){
-            if (inFlight){
-                for(int i = 0; i < s.cropRow.size(); i++){
-                    Crop c = s.getCrop(i);
+    public boolean fertilize(Field field) {
+        if (inFlight){
+        for(int j = 0; j < field.size(); j++){
+            CropRow cropRow = field.getCropRow(j);
+                for(int i = 0; i < cropRow.size(); i++){
+                    Crop c = cropRow.getCrop(i);
                     if(!c.isFertilized()){
-                        c.isFertilized(fertilized);
+                        c.isFertilized(true);
                     }
                 }
             }
@@ -33,7 +34,7 @@ public class CropDuster extends Aircraft implements FarmVehicle {
         if (person instanceof Pilot){
             boolean operated = false;
             fly();
-            fertilize();
+            //fertilize();
             operated = true;
             return operated;
         }
