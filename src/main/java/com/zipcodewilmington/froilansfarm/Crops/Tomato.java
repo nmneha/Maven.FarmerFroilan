@@ -4,7 +4,7 @@ import com.zipcodewilmington.froilansfarm.Interfaces.Edible;
 
 public class Tomato implements Edible {
 
-    int tomatoCount;
+    static int tomatoCount;
 
     @Override
     public int consumed() {
@@ -12,7 +12,7 @@ public class Tomato implements Edible {
     }
 
     @Override
-    public int harvested() {
+    public  int harvested() {
         return tomatoCount++;
     }
 
