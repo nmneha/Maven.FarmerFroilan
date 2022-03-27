@@ -4,14 +4,16 @@ import com.zipcodewilmington.froilansfarm.Interfaces.Edible;
 import com.zipcodewilmington.froilansfarm.Interfaces.Produce;
 
 public class Egg implements Produce, Edible {
+    boolean isFertilized = false;
+    boolean isHarvested = false;
     int eggCount;
 
 
-    public boolean isFertilized(boolean isFertilized) {
+    public boolean hasBeenFertilized() {
         return isFertilized;
     }
 
-    public boolean isHarvested(boolean isHarvested) {
+    public boolean hasBeenHarvested() {
         return isHarvested;
     }
 

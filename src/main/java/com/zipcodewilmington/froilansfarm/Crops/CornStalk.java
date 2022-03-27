@@ -3,22 +3,23 @@ package com.zipcodewilmington.froilansfarm.Crops;
 import com.zipcodewilmington.froilansfarm.Interfaces.Edible;
 
 public class CornStalk extends Crop{
+    boolean isFertilized = false;
+    boolean isHarvested = false;
 
-    public Edible yield() {
+    public void yield() {
         EarCorn corn = new EarCorn();
-        if(isFertilized() && isFertilized()) {
-            return corn;
+        if (hasBeenHarvested() && hasBeenFertilized()) {
+            corn.harvested();
         }
-        return null;
     }
 
 
-    public boolean isFertilized(boolean isFertilized) {
+    public boolean hasBeenFertilized() {
         return isFertilized;
     }
 
 
-    public boolean isHarvested(boolean isHarvested) {
+    public boolean hasBeenHarvested() {
         return isHarvested;
     }
 }

@@ -1,15 +1,13 @@
 package com.zipcodewilmington.froilansfarm.Interfaces;
 
 public interface Produce {
-    default Edible yield (){
-        return null;
-    }
+    default void yield (){}
 
-    default boolean isFertilized(boolean isFertilized) {
+    default boolean hasBeenFertilized() {
         return false;
     }
 
-    default boolean isHarvested(boolean isHarvested) {
+    default boolean hasBeenHarvested() {
         return false;
     }
 }
