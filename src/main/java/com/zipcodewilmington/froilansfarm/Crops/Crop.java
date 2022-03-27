@@ -4,9 +4,13 @@ import com.zipcodewilmington.froilansfarm.Interfaces.Produce;
 
 public  abstract class Crop implements Produce {
     boolean fertilizedStatus = false;
-
+    boolean harvestedStatus = false;
 
     public  boolean isFertilized(){
         return fertilizedStatus;
+    }
+
+    public boolean isHarvested() {
+        return harvestedStatus;
     }
 }

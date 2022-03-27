@@ -6,7 +6,7 @@ import org.junit.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class CornStalkTest {
-
+    Crop cornStalk = new CornStalk();
     @Test
     public void yieldEarCornTest() {
         //given
@@ -15,9 +15,13 @@ public class CornStalkTest {
     }
     @Test
     public void isfertilizedTest(){
-        Crop cornStalk = new CornStalk();
         Assert.assertFalse(cornStalk.isFertilized());
 
+    }
+
+    @Test
+    public void isHarvestedTest() {
+        Assert.assertFalse(cornStalk.isHarvested());
     }
 
 }
