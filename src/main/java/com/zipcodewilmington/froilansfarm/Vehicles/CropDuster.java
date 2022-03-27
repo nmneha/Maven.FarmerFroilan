@@ -12,10 +12,18 @@ import static com.zipcodewilmington.froilansfarm.Interfaces.Produce.*;
 
 
 public class CropDuster extends Aircraft implements FarmVehicle {
+
+
     public boolean fertilize(CropRow... cropRows) {
+        boolean fertilized = true;
         for(CropRow s  : cropRows){
             if (inFlight){
-                return true;
+                for(int i = 0; i < s.cropRow.size(); i++){
+                    Crop c = s.getCrop(i);
+                    if(!c.isFertilized()){
+                        c.isFertilized(fertilized);
+                    }
+                }
             }
         }
         return false;
