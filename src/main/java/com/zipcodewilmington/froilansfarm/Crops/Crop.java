@@ -3,14 +3,14 @@ package com.zipcodewilmington.froilansfarm.Crops;
 import com.zipcodewilmington.froilansfarm.Interfaces.Produce;
 
 public  abstract class Crop implements Produce {
-    boolean fertilizedStatus = false;
-    boolean harvestedStatus = false;
+    public boolean isFertilized;
+    public boolean isHarvested;
 
-    public  boolean isFertilized(){
-        return fertilizedStatus;
+    public  boolean hasBeenFertilized(){
+        return isFertilized;
     }
 
-    public boolean isHarvested() {
-        return harvestedStatus;
+    public boolean hasBeenHarvested() {
+        return isHarvested;
     }
 }

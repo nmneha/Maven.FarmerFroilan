@@ -15,13 +15,13 @@ public class CornStalkTest {
     }
     @Test
     public void isfertilizedTest(){
-        Assert.assertFalse(cornStalk.isFertilized());
+        Assert.assertFalse(cornStalk.hasBeenFertilized());
 
     }
 
     @Test
     public void isHarvestedTest() {
-        Assert.assertFalse(cornStalk.isHarvested());
+        Assert.assertFalse(cornStalk.hasBeenHarvested());
     }
 
 }

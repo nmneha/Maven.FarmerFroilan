@@ -10,12 +10,12 @@ public class TomatoPlantTest {
 
     @Test
     public void isfertilizedTest(){
-        Assert.assertFalse(tomatoPlant.isFertilized());
+        Assert.assertFalse(tomatoPlant.hasBeenFertilized());
 
     }
 
     @Test
     public void isHarvestedTest() {
-        Assert.assertFalse(tomatoPlant.isHarvested());
+        Assert.assertFalse(tomatoPlant.hasBeenHarvested());
     }
 }
