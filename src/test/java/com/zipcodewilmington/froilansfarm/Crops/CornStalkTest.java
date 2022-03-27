@@ -9,10 +9,13 @@ public class CornStalkTest {
     Crop cornStalk = new CornStalk();
     @Test
     public void yieldEarCornTest() {
-        //given
-        Crop cornStalk = new CornStalk();
-
+        EarCorn corn = new EarCorn();
+        cornStalk.yield(corn);
+        int actual = corn.currentCount();
+        Assert.assertEquals(0, actual);
     }
+
+
     @Test
     public void isfertilizedTest(){
         Assert.assertFalse(cornStalk.hasBeenFertilized());

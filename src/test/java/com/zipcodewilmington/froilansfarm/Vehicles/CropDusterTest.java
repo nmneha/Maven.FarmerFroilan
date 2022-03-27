@@ -23,7 +23,7 @@ public class CropDusterTest {
         //when
         cropduster.fertilize(field);
         //then
-        assertTrue(cornstalk.hasBeenFertilized());
+        assertTrue(cornstalk.isFertilized);
     }
 
     @Test

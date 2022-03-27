@@ -1,7 +1,11 @@
 package com.zipcodewilmington.froilansfarm.Interfaces;
 
-public interface Produce {
-    default void yield (){}
+public interface Produce<Food extends Edible> {
+
+    default void yield(Edible edible) {if (hasBeenHarvested() && hasBeenFertilized()) {
+        edible.harvested();
+    }
+    }
 
     default boolean hasBeenFertilized() {
         return false;
