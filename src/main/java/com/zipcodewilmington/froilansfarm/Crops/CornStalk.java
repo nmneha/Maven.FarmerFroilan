@@ -5,16 +5,20 @@ import com.zipcodewilmington.froilansfarm.Interfaces.Edible;
 public class CornStalk extends Crop{
 
     public Edible yield() {
+        EarCorn corn = new EarCorn();
+        if(isFertilized() && isFertilized()) {
+            return corn;
+        }
         return null;
     }
 
 
-    public boolean hasBeenFertilized(boolean isFertilized) {
+    public boolean isFertilized(boolean isFertilized) {
         return isFertilized;
     }
 
 
-    public boolean hasBeenHarvested(boolean isHarvested) {
+    public boolean isHarvested(boolean isHarvested) {
         return isHarvested;
     }
 }

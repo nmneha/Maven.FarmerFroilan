@@ -5,13 +5,11 @@ public interface Produce {
         return null;
     }
 
-
-
-    default boolean hasBeenFertilized(boolean isFertilized) {
+    default boolean isFertilized(boolean isFertilized) {
         return false;
     }
 
-    default boolean hasBeenHarvested(boolean isHarvested) {
+    default boolean isHarvested(boolean isHarvested) {
         return false;
     }
 }
