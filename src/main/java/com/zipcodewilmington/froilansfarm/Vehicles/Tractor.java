@@ -18,13 +18,8 @@ public class Tractor extends Vehicle<Farmer> implements FarmVehicle {
                 Crop c = cropRow.getCrop(j);
                 System.out.println(c.toString());
                 if (c.isFertilized){
-                    if (c instanceof CornStalk){
-                       EarCorn.harvested();
+                       c.yield();
                         cropRow.clearCrop();
-                    } else {
-                        Tomato.harvested();
-                        cropRow.clearCrop();
-                    }
                 }
             }
         }
