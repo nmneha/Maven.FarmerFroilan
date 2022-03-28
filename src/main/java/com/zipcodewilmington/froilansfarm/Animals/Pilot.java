@@ -11,8 +11,8 @@ public class Pilot extends Person implements Rider {
     }
 
     @Override
-    public String eat(Edible food) {
-        return super.eat(food);
+    public String eat() {
+        return super.eat();
     }
 
     @Override

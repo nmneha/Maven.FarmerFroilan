@@ -25,8 +25,8 @@ public class Farmer<CropType extends Crop> extends Person implements Rider, Bota
     }
 
     @Override
-    public String eat(Edible food) {
-        return super.eat(food);
+    public String eat() {
+        return super.eat();
     }
 
 }

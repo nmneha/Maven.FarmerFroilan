@@ -6,7 +6,7 @@ import com.zipcodewilmington.froilansfarm.Interfaces.Produce;
 
 import static com.zipcodewilmington.froilansfarm.Crops.EarCorn.consumed;
 
-public class Chicken<Earcorn extends Edible> extends Animal<Earcorn> implements Produce {
+public class Chicken extends Animal implements Produce {
         boolean hasBeenFertilized = false;
 
         @Override
@@ -15,8 +15,8 @@ public class Chicken<Earcorn extends Edible> extends Animal<Earcorn> implements 
         }
 
         @Override
-        public String eat(Earcorn food) {
-                Earcorn.consumed();
+        public String eat() {
+                EarCorn.consumed();
                 return "Yummy";
         }
         //yeild eggs

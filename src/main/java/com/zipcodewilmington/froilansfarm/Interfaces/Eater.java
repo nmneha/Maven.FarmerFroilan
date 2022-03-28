@@ -2,7 +2,7 @@ package com.zipcodewilmington.froilansfarm.Interfaces;
 
 
 
-public interface Eater <EdibleType extends Edible >{
+public interface Eater {
 
-    String eat(EdibleType food);
+    String eat();
 }
