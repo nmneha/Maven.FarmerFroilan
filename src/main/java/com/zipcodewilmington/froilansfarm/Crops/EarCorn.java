@@ -3,7 +3,7 @@ package com.zipcodewilmington.froilansfarm.Crops;
 import com.zipcodewilmington.froilansfarm.Interfaces.Edible;
 
 public class EarCorn implements Edible {
-    Integer cornCount = 0;
+   Integer cornCount = 0;
 
     @Override
     public int consumed() {
