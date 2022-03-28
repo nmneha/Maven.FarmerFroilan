@@ -20,12 +20,10 @@ public class Tractor extends Vehicle<Farmer> implements FarmVehicle {
                 System.out.println(c.toString());
                 if (c.isFertilized){
                     if (c instanceof CornStalk){
-                        EarCorn corn = new EarCorn();
-                        c.yield(corn);
+                        EarCorn.harvested();
                         cropRow.clearCrop();
                     } else {
-                        Tomato tomato = new Tomato();
-                        tomato.harvested();
+                        Tomato.harvested();
                         cropRow.clearCrop();
                     }
                 }

@@ -39,13 +39,11 @@ public class TractorTest {
         Field field = new Field();
         CropRow croprow = new CropRow();
         Crop cornstalk = new CornStalk();
-        Crop tomatoPlant = new TomatoPlant();
-        //croprow.add(cornstalk);
-        croprow.add(tomatoPlant);
+        croprow.add(cornstalk);
         field.add(croprow);
-        //field.add(croprow);
         dust.fertilize(field);
-        int actual = tractor.harvest(field);
+        tractor.harvest(field);
+        int actual = EarCorn.currentCount();
         int expected = 1;
         Assert.assertEquals(actual, expected);
     }
