@@ -8,7 +8,10 @@ public class Tomato implements Edible {
 
     @Override
     public int consumed() {
-        return tomatoCount--;
+        if (tomatoCount > 0) {
+            return tomatoCount--;
+        }
+        return tomatoCount;
     }
 
     @Override
