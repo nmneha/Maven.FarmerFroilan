@@ -22,10 +22,10 @@ public class ChickenTest {
     @Test
     void eatTest() {
         //given
-        EarCorn e = new EarCorn();
         Chicken chicken = new Chicken();
         String expected = "Yummy";
         //when
+        EarCorn e = new EarCorn();
         String actual = chicken.eat(e);
         //then
         assertEquals(expected,actual);
