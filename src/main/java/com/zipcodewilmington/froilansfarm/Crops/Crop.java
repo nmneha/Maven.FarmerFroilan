@@ -8,7 +8,7 @@ public  abstract class Crop implements Produce {
     public boolean isHarvested;
 
 
-    public void yield() {
+    public  void yield() {
         if(hasBeenFertilized() && hasBeenHarvested()) {
             Edible.harvested();
         }
