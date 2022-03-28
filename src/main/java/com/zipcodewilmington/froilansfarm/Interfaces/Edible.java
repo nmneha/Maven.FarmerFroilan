@@ -1,11 +1,22 @@
 package com.zipcodewilmington.froilansfarm.Interfaces;
 
-public interface Edible {
+public abstract class Edible {
+   public static int count = 0;
 
-   int consumed();
 
-   int harvested();
+   public static int consumed() {
+      if (count > 0) {
+         return count--;
+      }
+      return count;
+   }
 
-   int currentCount();
+   public static int harvested() {
+      return count++;
+   }
+
+   public static int currentCount() {
+      return count;
+   }
 
 }

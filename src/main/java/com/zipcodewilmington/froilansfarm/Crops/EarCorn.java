@@ -2,24 +2,26 @@ package com.zipcodewilmington.froilansfarm.Crops;
 
 import com.zipcodewilmington.froilansfarm.Interfaces.Edible;
 
-public class EarCorn implements Edible {
-   Integer cornCount = 0;
 
-    @Override
-    public int consumed() {
+public class EarCorn extends Edible {
+    static int cornCount = 0;
+
+
+
+    public static int consumed() {
         if (cornCount > 0) {
             return cornCount--;
         }
         return cornCount;
     }
 
-    @Override
-    public int harvested() {
+
+    public static int harvested() {
         return cornCount++;
     }
 
-    @Override
-    public int currentCount() {
+
+    public static int currentCount() {
         return cornCount;
     }
 
