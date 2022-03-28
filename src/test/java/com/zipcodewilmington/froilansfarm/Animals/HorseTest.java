@@ -21,11 +21,11 @@ public class HorseTest {
     @Test
     void testEat() {
         //given
-        EarCorn e = new EarCorn();
+
         Horse horse = new Horse();
         String expected = "Yumm";
         //when
-        String actual = horse.eat(e);
+        String actual = horse.eat();
         //then
         assertEquals(expected,actual);
     }

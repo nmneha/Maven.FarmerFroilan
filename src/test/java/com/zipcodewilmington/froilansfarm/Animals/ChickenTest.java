@@ -22,12 +22,14 @@ public class ChickenTest {
     @Test
     void eatTest() {
         //given
-        EarCorn e = new EarCorn();
+        EarCorn.count = 1;
         Chicken chicken = new Chicken();
         String expected = "Yummy";
+        int expectedCount =0;
         //when
-        String actual = chicken.eat(e);
+        String actual = chicken.eat();
         //then
         assertEquals(expected,actual);
+        assertEquals(expectedCount,EarCorn.currentCount());
     }
 }

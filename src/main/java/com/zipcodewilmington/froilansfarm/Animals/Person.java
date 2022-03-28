@@ -4,7 +4,7 @@ import com.zipcodewilmington.froilansfarm.Animals.Animal;
 import com.zipcodewilmington.froilansfarm.Crops.EarCorn;
 import com.zipcodewilmington.froilansfarm.Interfaces.Edible;
 
-public class Person extends Animal<Edible> {
+public class Person extends Animal{
 
     @Override
     public String makeNoise() {
@@ -12,8 +12,8 @@ public class Person extends Animal<Edible> {
     }
 
     @Override
-    public String eat(Edible food) {
-        food.consumed();
+    public String eat() {
+        Edible.consumed();
         return "Yummy";
     }
 }

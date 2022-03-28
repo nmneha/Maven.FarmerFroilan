@@ -1,9 +1,12 @@
 package com.zipcodewilmington.froilansfarm.Animals;
 
 import com.zipcodewilmington.froilansfarm.Crops.EarCorn;
+import com.zipcodewilmington.froilansfarm.Interfaces.Edible;
 import com.zipcodewilmington.froilansfarm.Interfaces.Produce;
 
-public class Chicken extends Animal<EarCorn> implements Produce {
+import static com.zipcodewilmington.froilansfarm.Crops.EarCorn.consumed;
+
+public class Chicken extends Animal implements Produce {
         boolean hasBeenFertilized = false;
 
         @Override
@@ -12,8 +15,8 @@ public class Chicken extends Animal<EarCorn> implements Produce {
         }
 
         @Override
-        public String eat(EarCorn food) {
-                food.consumed();
+        public String eat() {
+                EarCorn.consumed();
                 return "Yummy";
         }
         //yeild eggs

@@ -22,11 +22,10 @@ class PilotTest {
     @Test
     void eatTest() {
         //given
-        Tomato t = new Tomato();
         Person froilanda = new Pilot();
         String expected = "Yummy";
         //when
-        String actual = froilanda.eat(t);
+        String actual = froilanda.eat();
         //then
         assertEquals(expected,actual);
     }
