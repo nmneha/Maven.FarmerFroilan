@@ -8,6 +8,11 @@ public class Egg implements Produce, Edible {
     boolean isHarvested = false;
     int eggCount;
 
+    public void yield(Edible edible) {
+        if (hasBeenFertilized() && hasBeenHarvested()) {
+            edible.harvested();
+        }
+    }
 
     public boolean hasBeenFertilized() {
         return isFertilized;
