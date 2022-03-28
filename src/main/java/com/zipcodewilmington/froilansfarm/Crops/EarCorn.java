@@ -7,7 +7,10 @@ public class EarCorn implements Edible {
 
     @Override
     public int consumed() {
-        return cornCount--;
+        if (cornCount > 0) {
+            return cornCount--;
+        }
+        return cornCount;
     }
 
     @Override

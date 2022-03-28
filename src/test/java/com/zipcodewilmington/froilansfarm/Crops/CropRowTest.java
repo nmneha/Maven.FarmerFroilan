@@ -9,7 +9,7 @@ public class CropRowTest {
 
 
     @Test
-    public void addCropTest() {
+    public void addSizeCropTest() {
         CropRow cropRow = new CropRow();
         TomatoPlant tomatoPlant = new TomatoPlant();
         cropRow.add(tomatoPlant);
@@ -22,6 +22,17 @@ public class CropRowTest {
         TomatoPlant tomatoPlant = new TomatoPlant();
         cropRow.add(tomatoPlant);
         Assert.assertTrue(cropRow.getCrop(0) != null);
+    }
+
+    @Test
+    public void clearCropTest() {
+        CropRow cropRow = new CropRow();
+        CornStalk cornStalk = new CornStalk();
+        cropRow.add(cornStalk);
+        System.out.println("Size: " + cropRow.size());
+        cropRow.clearCrop();
+        System.out.println("After Clear: " + cropRow.size());
+        Assert.assertEquals(0, cropRow.size());
     }
 
 

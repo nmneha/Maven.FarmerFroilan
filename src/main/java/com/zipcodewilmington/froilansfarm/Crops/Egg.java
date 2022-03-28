@@ -19,7 +19,10 @@ public class Egg implements Produce, Edible {
 
     @Override
     public int consumed() {
-        return eggCount--;
+        if (eggCount > 0) {
+            return eggCount--;
+        }
+        return eggCount;
     }
 
     @Override

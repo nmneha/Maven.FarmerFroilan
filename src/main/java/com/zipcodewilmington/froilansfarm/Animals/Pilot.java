@@ -14,4 +14,16 @@ public class Pilot extends Person implements Rider {
     public String eat(Edible food) {
         return super.eat(food);
     }
+
+    @Override
+    public void mount() {
+        Rider.super.mount();
+    }
+
+    @Override
+    public void dismount() {
+        Rider.super.dismount();
+    }
+
+
 }
