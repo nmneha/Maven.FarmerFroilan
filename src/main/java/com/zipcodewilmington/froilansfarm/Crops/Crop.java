@@ -8,9 +8,9 @@ public  abstract class Crop implements Produce {
     public boolean isHarvested;
 
 
-    public void yield(Edible edible) {
+    public void yield() {
         if(hasBeenFertilized() && hasBeenHarvested()) {
-            edible.harvested();
+            Edible.harvested();
         }
     }
 
