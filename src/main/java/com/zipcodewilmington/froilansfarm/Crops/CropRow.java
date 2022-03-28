@@ -20,4 +20,8 @@ public class CropRow{
     public Crop getCrop(int i) {
         return cropRow.get(i);
     }
+
+    public void clearCrop() {
+        cropRow.clear();
+    }
 }

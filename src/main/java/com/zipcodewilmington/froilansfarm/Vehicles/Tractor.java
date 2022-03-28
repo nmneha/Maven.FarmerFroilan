@@ -21,11 +21,12 @@ public class Tractor extends Vehicle<Farmer> implements FarmVehicle {
                     if (c instanceof CornStalk){
                         EarCorn earCorn = new EarCorn();
                         earCorn.harvested();
+                        cropRow.clearCrop();
                     } else {
                         Tomato tomato = new Tomato();
                         tomato.harvested();
+                        cropRow.clearCrop();
                     }
-
                 }
             }
         }
