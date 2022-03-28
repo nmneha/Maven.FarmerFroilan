@@ -5,14 +5,24 @@ import com.zipcodewilmington.froilansfarm.Crops.CropRow;
 import com.zipcodewilmington.froilansfarm.Crops.Field;
 import com.zipcodewilmington.froilansfarm.Crops.Tomato;
 
+import java.util.ArrayList;
+
 public interface Botanist <CropType extends Crop>{
-    default void plantRow(CropRow row,CropType crop){
-        row.cropRow.add(crop);
+
+    default CropRow plantRow(CropRow row,CropType crop){
+       if(row == null){
+           row = new CropRow();
+       }
+        row.add(crop);
+       return row;
     }
 
-    default void plantFeild(Field field, CropType crop){
-        for(int x =0;x<field.field.size();x++)
-        plantRow(field.field.get(x),crop);
+    default Field plantField(Field field, CropType... crops) {
+        int x = 0;
+        for (CropType crop : crops) {
+            field.add(plantRow(field.getCropRow(x), crop));
+            x++;
+        }
+        return field;
     }
-
 }
