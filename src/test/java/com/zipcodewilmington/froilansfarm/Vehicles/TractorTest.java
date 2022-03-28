@@ -39,7 +39,7 @@ public class TractorTest {
         Field field = new Field();
         CropRow croprow = new CropRow();
         Crop cornstalk = new CornStalk();
-        Crop tomatoPlant = new TomatoPlant<>();
+        Crop tomatoPlant = new TomatoPlant();
         //croprow.add(cornstalk);
         croprow.add(tomatoPlant);
         field.add(croprow);
