@@ -2,25 +2,25 @@ package com.zipcodewilmington.froilansfarm.Crops;
 
 import com.zipcodewilmington.froilansfarm.Interfaces.Edible;
 
-public class Tomato implements Edible {
+public class Tomato extends Edible {
 
-    static int tomatoCount;
+    public static int tomatoCount;
 
-    @Override
-    public int consumed() {
+
+    public static int consumed() {
         if (tomatoCount > 0) {
             return tomatoCount--;
         }
         return tomatoCount;
     }
 
-    @Override
-    public  int harvested() {
+
+    public static int harvested() {
         return tomatoCount++;
     }
 
-    @Override
-    public int currentCount() {
+
+    public static int currentCount() {
         return tomatoCount;
     }
 }

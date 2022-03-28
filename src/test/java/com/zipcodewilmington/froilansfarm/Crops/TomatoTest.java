@@ -3,8 +3,6 @@ package com.zipcodewilmington.froilansfarm.Crops;
 import org.junit.jupiter.api.Test;
 import org.testng.Assert;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 public class TomatoTest {
 
     @Test

@@ -3,11 +3,16 @@ package com.zipcodewilmington.froilansfarm.Crops;
 import com.zipcodewilmington.froilansfarm.Interfaces.Edible;
 import com.zipcodewilmington.froilansfarm.Interfaces.Produce;
 
-public class Egg implements Produce, Edible {
+public class Egg extends Edible implements Produce {
     boolean isFertilized = false;
     boolean isHarvested = false;
-    int eggCount;
+    static int eggCount;
 
+    public void yield(Egg egg) {
+        if (hasBeenFertilized() && hasBeenHarvested()) {
+            egg.harvested();
+        }
+    }
 
     public boolean hasBeenFertilized() {
         return isFertilized;
@@ -17,21 +22,18 @@ public class Egg implements Produce, Edible {
         return isHarvested;
     }
 
-    @Override
-    public int consumed() {
+    public static int consumed() {
         if (eggCount > 0) {
             return eggCount--;
         }
         return eggCount;
     }
 
-    @Override
-    public int harvested() {
+    public static int harvested() {
         return eggCount++;
     }
 
-    @Override
-    public int currentCount() {
+    public static int currentCount() {
         return eggCount;
     }
 }

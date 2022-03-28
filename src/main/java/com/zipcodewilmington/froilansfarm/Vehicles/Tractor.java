@@ -3,6 +3,7 @@ package com.zipcodewilmington.froilansfarm.Vehicles;
 import com.zipcodewilmington.froilansfarm.Animals.Farmer;
 import com.zipcodewilmington.froilansfarm.Animals.Person;
 import com.zipcodewilmington.froilansfarm.Crops.*;
+import com.zipcodewilmington.froilansfarm.Interfaces.Edible;
 import com.zipcodewilmington.froilansfarm.Interfaces.FarmVehicle;
 
 public class Tractor extends Vehicle<Farmer> implements FarmVehicle {
@@ -19,8 +20,8 @@ public class Tractor extends Vehicle<Farmer> implements FarmVehicle {
                 System.out.println(c.toString());
                 if (c.isFertilized){
                     if (c instanceof CornStalk){
-                        EarCorn earCorn = new EarCorn();
-                        c.yield(earCorn);
+                        EarCorn corn = new EarCorn();
+                        c.yield(corn);
                         cropRow.clearCrop();
                     } else {
                         Tomato tomato = new Tomato();
