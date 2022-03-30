@@ -8,6 +8,7 @@ public class Horse extends Animal implements Rideable {
 
     public static boolean mounted;
     public static boolean disMounted;
+    public static boolean gallup;
 
     @Override
     public String makeNoise() {

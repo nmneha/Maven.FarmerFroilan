@@ -29,7 +29,7 @@ class RiderTest {
     void ride() {
         Horse horse = new Horse();
         Person person = new Person();
-        person.disMount();
-        assertTrue(Horse.disMounted);
+        person.ride();
+        assertFalse(Horse.gallup);
     }
 }

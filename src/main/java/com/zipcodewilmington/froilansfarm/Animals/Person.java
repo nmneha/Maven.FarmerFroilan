@@ -27,10 +27,18 @@ public class Person extends Animal{
     }
 
     public void mount() {
+        if (!Horse.gallup)
         Horse.mounted = true;
     }
 
     public void disMount() {
         Horse.disMounted = true;
+    }
+
+    public void ride() {
+        mount();
+        Horse.gallup = true;
+        disMount();
+        Horse.gallup = false;
     }
 }
