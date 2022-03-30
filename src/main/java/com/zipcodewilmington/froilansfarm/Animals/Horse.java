@@ -6,6 +6,9 @@ import com.zipcodewilmington.froilansfarm.Interfaces.Rideable;
 
 public class Horse extends Animal implements Rideable {
 
+    public static boolean mounted;
+    public static boolean disMounted;
+
     @Override
     public String makeNoise() {
         return "Neigh neigh";
