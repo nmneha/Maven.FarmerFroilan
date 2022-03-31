@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class RiderTest {
 
     @Test
-    void mount() {
+    void mountTest() {
         Horse horse = new Horse();
         Person person = new Person();
         person.mount();
@@ -18,7 +18,7 @@ class RiderTest {
     }
 
     @Test
-    void dismount() {
+    void dismountTest() {
         Horse horse = new Horse();
         Person person = new Person();
         person.disMount();
@@ -26,7 +26,7 @@ class RiderTest {
     }
 
     @Test
-    void ride() {
+    void rideTest() {
         Horse horse = new Horse();
         Person person = new Person();
         person.ride();
