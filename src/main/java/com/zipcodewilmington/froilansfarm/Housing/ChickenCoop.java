@@ -12,5 +12,7 @@ public class ChickenCoop extends Housing<Chicken> {
     }
 
 
-
+    public void add(Chicken c) {
+        super.housed.add(c);
+    }
 }
