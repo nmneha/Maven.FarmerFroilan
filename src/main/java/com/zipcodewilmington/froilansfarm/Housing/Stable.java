@@ -11,4 +11,11 @@ public class Stable extends Housing<Horse> {
     }
 
 
+    public void add(Horse h) {
+        super.housed.add(h);
+    }
+
+    public Horse getHorse(int i) {
+        return super.housed.get(i);
+    }
 }
