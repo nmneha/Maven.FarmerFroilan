@@ -4,7 +4,7 @@ import com.zipcodewilmington.froilansfarm.Interfaces.Edible;
 
 
 public class EarCorn extends Edible {
-    static int cornCount = 0;
+    static int cornCount = 50;
 
 
 

@@ -17,8 +17,8 @@ class MondayTest {
     public void mondaySim(){
     Person Froilan = new Farmer<>();
     Person Froilada = new Pilot();
-    FarmVehicle cropduster = new CropDuster();
-    FarmVehicle tractor = new Tractor();
+    CropDuster cropduster = new CropDuster();
+    Tractor tractor = new Tractor();
     Field field = new Field();
     CropRow cropRow = new CropRow();
     CropRow cropRow1 = new CropRow();
@@ -74,6 +74,10 @@ class MondayTest {
     field.add(cropRow2);
     field.add(cropRow3);
     field.add(cropRow4);
+
+    //Everyday Activities
+
+
 
     //Fertilize field
     cropduster.operate(Froilada, field);

@@ -4,7 +4,7 @@ import com.zipcodewilmington.froilansfarm.Interfaces.Edible;
 
 public class Tomato extends Edible {
 
-    public static int tomatoCount;
+    public static int tomatoCount = 20;
 
 
     public static int consumed() {

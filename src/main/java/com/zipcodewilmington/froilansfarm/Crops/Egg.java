@@ -6,7 +6,7 @@ import com.zipcodewilmington.froilansfarm.Interfaces.Produce;
 public class Egg extends Edible implements Produce {
     boolean isFertilized = false;
     boolean isHarvested = false;
-    static int eggCount;
+    static int eggCount = 20;
 
     public void yield(Egg egg) {
         if (hasBeenFertilized() && hasBeenHarvested()) {
