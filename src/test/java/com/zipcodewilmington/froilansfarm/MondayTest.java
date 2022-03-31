@@ -12,7 +12,7 @@ import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MondayTest {
+public class MondayTest {
 @Test
     public void mondaySim(){
     Person Froilan = new Farmer<>();
