@@ -30,7 +30,7 @@ public class Egg extends Edible implements Produce {
     }
 
     public static int harvested() {
-        return eggCount++;
+        return eggCount+6;
     }
 
     public static int currentCount() {

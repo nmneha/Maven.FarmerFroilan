@@ -9,6 +9,5 @@ public interface Rider {
     }
 
     default void ride() {
-
     }
 }

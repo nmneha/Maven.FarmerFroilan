@@ -16,7 +16,7 @@ public class Tomato extends Edible {
 
 
     public static int harvested() {
-        return tomatoCount++;
+        return tomatoCount+8;
     }
 
 

@@ -2,6 +2,8 @@ package com.zipcodewilmington.froilansfarm.Crops;
 
 import com.zipcodewilmington.froilansfarm.Interfaces.Edible;
 
+import java.util.Random;
+
 
 public class EarCorn extends Edible {
     static int cornCount = 50;
@@ -17,7 +19,7 @@ public class EarCorn extends Edible {
 
 
     public static int harvested() {
-        return cornCount++;
+        return cornCount+10;
     }
 
 

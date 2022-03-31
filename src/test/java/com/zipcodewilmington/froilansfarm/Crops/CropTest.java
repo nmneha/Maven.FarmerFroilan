@@ -12,6 +12,7 @@ class CropTest {
         CornStalk cornStalk = new CornStalk();
         cornStalk.yield();
         int expected = 0;
+        EarCorn.consumed();
         int actual = EarCorn.currentCount();
         Assert.assertEquals(expected, actual);
     }
