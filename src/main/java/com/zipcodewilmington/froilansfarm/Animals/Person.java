@@ -35,10 +35,16 @@ public class Person extends Animal{
         Horse.disMounted = true;
     }
 
-    public void ride() {
+    public void ride(Horse horse) {
         mount();
         Horse.gallup = true;
         disMount();
         Horse.gallup = false;
+    }
+
+    public void feed(Animal a, int amount) {
+        for (int i = 0; i < amount; i++) {
+            a.eat();
+        }
     }
 }
