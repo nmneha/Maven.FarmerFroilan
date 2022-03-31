@@ -76,18 +76,28 @@ class MondayTest {
     field.add(cropRow4);
 
     //Everyday Activities
-    for (int i = 0; i < 10; i++) {
-        if(i < 3) {
+
+    //Ride Horses
+    for (int i = 0; i < 3; i++) {
             Froilan.ride(stable1.getHorse(i));
-        } else if (i < 6){
-            Froilan.ride(stable2.getHorse(i));
-        }else {
-            Froilanda.ride(stable3.getHorse(i));
-        }
+            Froilan.feed(stable1.getHorse(i), 3);
     }
+    for (int i = 0; i < 3; i++) {
+        Froilan.ride(stable2.getHorse(i));
+        Froilan.feed(stable2.getHorse(i), 3);
+    }
+    for (int i = 0; i < 4; i++) {
+        Froilanda.ride(stable3.getHorse(i));
+        Froilanda.feed(stable3.getHorse(i), 3);
+    }
+
+    //BreakFast
+    Froilan.meal(5, 1, 2);
+    Froilanda.meal(2, 2, 1);
+
 
 
     //Fertilize field
-    cropduster.operate(Froilada, field);
+    cropduster.operate(Froilanda, field);
 }
 }
