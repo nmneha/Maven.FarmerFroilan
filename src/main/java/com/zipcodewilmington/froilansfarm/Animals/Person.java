@@ -35,7 +35,7 @@ public class Person extends Animal{
         Horse.disMounted = true;
     }
 
-    public void ride() {
+    public void ride(Horse horse) {
         mount();
         Horse.gallup = true;
         disMount();

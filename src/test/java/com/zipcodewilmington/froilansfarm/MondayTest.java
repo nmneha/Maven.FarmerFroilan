@@ -16,7 +16,7 @@ class MondayTest {
 @Test
     public void mondaySim(){
     Person Froilan = new Farmer<>();
-    Person Froilada = new Pilot();
+    Person Froilanda = new Pilot();
     CropDuster cropduster = new CropDuster();
     Tractor tractor = new Tractor();
     Field field = new Field();
@@ -76,7 +76,15 @@ class MondayTest {
     field.add(cropRow4);
 
     //Everyday Activities
-
+    for (int i = 0; i < 10; i++) {
+        if(i < 3) {
+            Froilan.ride(stable1.getHorse(i));
+        } else if (i < 6){
+            Froilan.ride(stable2.getHorse(i));
+        }else {
+            Froilanda.ride(stable3.getHorse(i));
+        }
+    }
 
 
     //Fertilize field
