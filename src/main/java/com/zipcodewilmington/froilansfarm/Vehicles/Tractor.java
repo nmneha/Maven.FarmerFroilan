@@ -10,8 +10,7 @@ public class Tractor extends Vehicle<Farmer> implements FarmVehicle {
 
 
 
-    public int harvest(Field field) {
-        int harvest = 0;
+    public void harvest(Field field) {
         for (int i = 0; i < field.size(); i++){
             CropRow cropRow = field.getCropRow(i);
             System.out.println(cropRow.toString());
@@ -19,17 +18,11 @@ public class Tractor extends Vehicle<Farmer> implements FarmVehicle {
                 Crop c = cropRow.getCrop(j);
                 System.out.println(c.toString());
                 if (c.isFertilized){
-                    if (c instanceof CornStalk){
-                        EarCorn.harvested();
+                       c.yield();
                         cropRow.clearCrop();
-                    } else {
-                        Tomato.harvested();
-                        cropRow.clearCrop();
-                    }
                 }
             }
         }
-        return harvest;
     }
 
 

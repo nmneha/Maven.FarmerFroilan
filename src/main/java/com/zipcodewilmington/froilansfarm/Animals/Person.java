@@ -25,4 +25,20 @@ public class Person extends Animal{
         for(int i=0;i <tomatoNum;i++) Tomato.consumed();
         return "I'm Full";
     }
+
+    public void mount() {
+        if (!Horse.gallup)
+        Horse.mounted = true;
+    }
+
+    public void disMount() {
+        Horse.disMounted = true;
+    }
+
+    public void ride() {
+        mount();
+        Horse.gallup = true;
+        disMount();
+        Horse.gallup = false;
+    }
 }
